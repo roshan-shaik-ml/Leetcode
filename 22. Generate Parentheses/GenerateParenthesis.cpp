@@ -1,3 +1,25 @@
+/*
+    Author: Shaik Faizan Roshan Ali
+    Date: November 17 2023
+    contact: roshan.shaik.ml@gmail.com
+    Problem link: https://leetcode.com/problems/generate-parentheses/  
+    Approach: 
+    1. Create a vector called 'parenthesis' to store valid combinations.
+
+    2. Define a function 'makeParenthesis' to generate combinations:
+       a. Check if the count of closing parentheses is greater than opening parentheses; if so, return.
+       b. Check if both opening and closing parentheses have reached the desired count 'n'; if so, add the current combination to 'parenthesis' and return.
+       c. If the count of opening parentheses is less than 'n', make a recursive call by appending an opening parenthesis to the current string.
+       d. If the count of closing parentheses is less than 'n', make another recursive call by appending a closing parenthesis to the current string.
+    3. In the 'main' function:
+       a. Initialize 'n' to the desired value (e.g., 2).
+       b. Call 'makeParenthesis' with an empty string and initial counts of opening and closing parentheses both set to 0.
+
+    4. The 'parenthesis' vector now contains all valid combinations of well-formed parentheses.
+    
+    5. Optionally, iterate through the 'parenthesis' vector to print or use the combinations as needed.
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;
