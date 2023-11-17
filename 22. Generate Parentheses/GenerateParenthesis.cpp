@@ -67,12 +67,14 @@ int main() {
     REP(i, 1, n+1) {
 
         cout << "valid parenthesis permutation with n = " << i << "\n";
+        
         makeParenthesis(i, "", 0, 0);
+        
         REP(j, 0, parenthesis.size()) {
 
             cout << parenthesis[j] << " ";
         }
-        cout << "\n\n";
+        cout << "\n";
     }
 
 }
