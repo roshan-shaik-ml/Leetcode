@@ -1,7 +1,7 @@
 /*
   Author: Shaik Faizan Roshan Ali
-  Date: 26th November 2023
-  Link: https://leetcode.com/problems/binary-search/description/
+  Date: 9th December 2023
+  Link: https://leetcode.com/problems/path-sum/
   Approach:
 	Base case: If the current node is null, return false.
 	Initialize variables to track if the target sum is found in the left and right subtrees.
